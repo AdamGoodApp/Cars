@@ -1,0 +1,22 @@
+<%= form_for(@car) do |f|%>
+	Name:
+	<%= f.text_field :name %>
+	<br>
+	Price:$
+	<%= f.number_field :price, in: 10000...1000000 %>
+	<br>
+	MPH:
+	<%= f.text_field :mph %>
+	<br>
+	MPG:
+	<%= f.text_field :mpg %>
+	<br>
+	Car Type:
+	<%= f.text_field :car_type %>
+	<br>
+	<%= f.label :body_type_id, 'Body Type' %><br />
+    <%= f.select(:body_type_id, BodyType.all.map {|c| [c.description, c.id]} ) %>
+	<%= f.label :engine_type_id, 'Engine Type' %><br />
+    <%= f.select(:engine_type_id, EngineType.all.map {|c| [c.fuel, c.id]} ) %>
+	<%= f.submit submit_button_value  %>
+<% end %>

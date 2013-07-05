@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: 
+  image: 
+  price: 
+  mph: 
+  mpg: 
+  car_type: MyString
+
+two:
+  name: 
+  image: 
+  price: 
+  mph: 
+  mpg: 
+  car_type: MyString

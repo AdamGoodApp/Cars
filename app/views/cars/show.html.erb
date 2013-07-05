@@ -1,0 +1,23 @@
+
+
+Name: <%= @car.name %>
+<br>
+Price: $<%= @car.price %>
+<br>
+MPH: <%= @car.mph %>
+<br>
+MPG: <%= @car.mpg %>
+<br>
+Type: <%= @car.car_type %>
+<br>
+Body: <%= @car.body_type.description %>
+<br>
+Fuel: <%= @car.engine_type.description %> <%= @car.engine_type.fuel %>
+<br>
+
+
+
+
+<%= image_tag(@car.image) %>
+
+<%= video_tag("car.mp4", size: "16x10", poster: "screenshot.png") %>

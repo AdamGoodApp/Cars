@@ -1,0 +1,5 @@
+	<%= car.name %>  costs $<%= car.price %> 
+	<%= link_to'Show', car_path(car.id) %>
+	<%= link_to 'Destroy', car, method: :delete, data: { confirm: 'Are you sure?' } %>
+	<%= link_to 'Edit', edit_car_path(car) %>
+	<br>
